@@ -1,0 +1,17 @@
+.header{
+        width: 100%;
+        background: #4c8930;
+        padding: 10px 5%;
+        display: flex;
+    }
+.header .header-content{
+        font-size: 17px;
+        font-weight: 300;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        gap: 1em;
+        margin-left: 7%;
+        cursor: pointer;
+}

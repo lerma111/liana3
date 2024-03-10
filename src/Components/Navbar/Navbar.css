@@ -1,0 +1,54 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    height: 9vh;
+}
+.logo_liana{
+    width: 160px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.navbar .navbar-content{
+    font-size: 17px;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    gap: 1em;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+.navbar .navbar-content :hover{
+    color: #4c8930;
+    transition: 0.5s;
+}
+
+/* BUTTON STYLING FOR COPY // Copied 27.02. 01:00*/
+
+.navbar .search-button{
+
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    align-items: 'center';
+    justify-content: 'center';
+    padding: 3px 13px;
+    background-color: #4c8930;
+    cursor: pointer;
+}
+
+/*text transform doesn't look so good with such a small font
+
+.navbar .search-button:hover .button-text{
+    transform: scale(1.03);
+    transition: 0.25s;
+*/

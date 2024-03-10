@@ -1,0 +1,68 @@
+.h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 3% 40px;
+    border-bottom: 1px solid rgb(196, 193, 193);
+    gap: 1em;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+}
+
+.cards .logo-image{
+    cursor: pointer;
+    height: 80%;
+    width: 170px;
+}
+
+.cards .logo-bodyshop{
+    cursor: pointer;
+    height: 80%;
+    width: 150px;
+}
+
+.card-title{
+    padding-bottom: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.cards .text-container{
+    border-left: 1px solid rgb(196, 193, 193);
+    border-right: 1px solid rgb(196, 193, 193);
+    border-bottom: 1px solid rgb(196, 193, 193);
+    border-radius: 0px 0px 3px 3px;
+    width: 250px;
+    min-width: 180px;
+    height: 190px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+    color: rgb(70, 70, 70);
+}
+
+.cards .card-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+.cards .image-container{
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 3px 3px 0px 0px;
+    width: 250px;
+    min-width: 180px;
+    height: 190px;
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}

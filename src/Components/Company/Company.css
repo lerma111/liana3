@@ -1,0 +1,145 @@
+.company-container .top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 5% 0px;
+    gap: 1em;
+}
+
+/* trash
+
+.top-container .top-pictures{
+    height: 250px;
+    min-width: 250px;
+    max-width: 350px;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+}
+
+.images{
+    max-width: 100%;
+    height: 100%;
+}
+
+.top-pictures .images:hover{
+    filter: saturate(30%) blur(2px);;
+    transition: all 0.4s;
+}
+
+.top-pictures .picture-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+/*new styling attempt*/
+
+.company-image-container {
+    position:relative;
+    height: 250px;
+    width: 450px;
+    min-width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.company-image {
+    float: left;
+    height: 250px;
+    background-size: cover;
+}
+
+.company-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: saturate(100%) blur(1px);
+}
+
+.company-image-overlay:hover {
+    backdrop-filter: saturate(150%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* border test
+.company-image-overlay:hover{
+    border: solid #4c8930 1px;
+    transition: none;
+    border-radius: 5px;
+}
+*/
+
+.company-image-overlay:hover .company-image-text{
+    font-size: 29px;
+    transition: all 0.3s;
+}
+
+.company-image-text {
+    color: white;
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 2px #000000;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+/*BOTTOM-CONTENT CONTAINER STARTS HERE.*/
+/*BOTTOM-CONTENT CONTAINER STARTS HERE.*/
+/*BOTTOM-CONTENT CONTAINER STARTS HERE.*/
+
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(196, 193, 193);
+    gap: 3em;
+    padding-top: 25px;
+    /*background-color: blue;*/
+}
+.bottom-content-container{
+    display: flex;
+    min-width: 250px;
+    /*background-color: red;*/
+}
+
+.bottom-content-block{
+    display: flex;
+    align-items: center;
+}
+
+.numbers-block{
+    min-width: 170px;
+    height: 200px;
+}
+
+.animated-number{
+    font-size: 80px;
+    letter-spacing: -2px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 35px;
+}
+
+.number-text{
+    min-height: 50%;
+    font-weight: 450;
+    font-size: 25px;
+    display: flex;
+    margin-top: -30px;
+}
+.client-image{
+    width: 95px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
