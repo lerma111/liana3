@@ -3,26 +3,53 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    padding: 50px 5%;
+    justify-content: center;
+    padding: 5%;
     height: 250px;
     background-color: black;
     color: white;
 }
+
+.footer-100vw {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        height: fit-content;
+    }
+  }
 
 .footer-header{
     font-size: 18px;
     font-weight: 500;
 }
 
+@media (max-width: 600px) {
+    .footer-header {
+        display: none;
+    }
+  }
+
 .footer-container .footer-top{
     font-size: 16.5px;
     font-weight: 300;
-    width: 100%;
     color: white;
-    align-items: flex-start;
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+    .footer-container .footer-top {
+        display: flex;
+        justify-content: center;
+    }
+  }
 
 .footer-container .footer-top .footer-top-links{
     display:flex;
@@ -31,18 +58,34 @@
 
 
 .footer-bottom-links{
-    width: 100%;
+
     display: flex;
     align-items: flex-end;
     padding-top: 20px;
 
-
 }
+
+@media (max-width: 600px) {
+    .footer-bottom-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+  }
 
 .footer-contact{
     font-size: 14px;
     font-weight: 300;
 }
+
+@media (max-width: 600px) {
+    .footer-contact {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    }
+  }
 
 .footer-contact .contact-header{
     font-size: 14px;
@@ -64,10 +107,31 @@
     margin-left: 5%;
 }
 
+@media (max-width: 600px) {
+    .footer-bottom-links .button-div {
+    margin: 0%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    }
+  }
+
 .footer-socials{
     margin-bottom: -12.2px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .footer-bottom .footer-socials {
+    
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-socials .footer-img {
+        width: 36px;
+        padding: 0px 5px 0px
+    }
+  }
 
 .footer-button{
 
@@ -90,6 +154,11 @@
     -moz-transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
+}
+
+.footer-text-links:hover{
+    color: #4c8930;
+    cursor: pointer;
 }
 
 /*text transform doesn't look so good with such a small font

@@ -9,7 +9,7 @@ import bottomright from '../../kuvat/Company_in_numbers/globe_right.png'
 
 import { useSpring, animated} from "react-spring";
 
-{/*number animation function*/}
+/*number animation function*/
 function Number({ n }) {
         const { number } = useSpring({
             from: { number: 0 },
@@ -20,9 +20,11 @@ function Number({ n }) {
         return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
     }
 
-{/*main content*/}
+/*main content*/
 const Company = () => {
     return(
+        
+        <div className='company-100vw'>
         <div className='company-container'>
 
 
@@ -30,7 +32,7 @@ const Company = () => {
             <div className="top-container">
                 <div className='company-image-container'>
                     <div className='company-image-overlay'>
-                            <a href='#' className="company-image-text">Collaboration</a>
+                            <a href='#' className="company-image-text">Company</a>
                     </div>
                             <img className='company-image' src={topleft} alt="Collaboration"></img>
                 </div>
@@ -48,12 +50,67 @@ const Company = () => {
                     </div>
                             <img className='company-image' src={topright} alt="Contact Us"></img>
                 </div>
+
+                {/* RESPONSIVE ELEMENT 1240px width*/}
+
+                <div className='fact-sheet-r'>
+                        <div className='fact-sheet-block-r'>
+                        <div className='bottom-content-container-r'>
+                                
+                                        <div className='content-block-image-container-r'><img className='client-image-r' src={bottomleft} alt="suitcase"></img> </div>
+                                        
+                                                <h1 className='number-text-r'>
+                                                                Clients:
+                                                </h1>
+
+                                                <div className='animated-number-r'>
+                                                        <Number n={3000} />
+                                                </div>
+                                                
+                                        
+                                
+                        </div>
+
+                        <div className='bottom-content-container-r'>
+                                
+                                        <div className='content-block-image-container-r'><img className='client-image-r' src={bottommid} alt="face"></img> </div>
+
+                                                <h1 className='number-text-r'>
+                                                                Employees:
+                                                </h1>
+
+                                                <div className='animated-number-r'>
+                                                        <Number n={180} />
+                                                </div>
+                                                
+                                        
+                                
+                        </div>
+
+                        <div className='bottom-content-container-r'>
+                                
+                                        <div className='content-block-image-container-r'><img className='client-image-r' src={bottomright} alt="globe"></img> </div>
+                                        
+                                                <h1 className='number-text-r'>
+                                                                Daily Users:
+                                                </h1>
+
+                                                <div className='animated-number-r'>
+                                                        <Number n={10000} />
+                                                </div>
+                                                
+                                        
+                                
+                        </div>
+                </div>
+                </div>
+
             </div>
                                 {/*BOTTOM ROW ANIMATIONS*/}
                 <div className='bottom-container'>
                         <div className='bottom-content-container'>
                                 <div className='bottom-content-block'>
-                                        <div className='content-block-image-container'><img className='client-image' src={bottomleft} alt="suitcase"></img> </div>
+                                        <div className='content-block-image-container-r'><img className='client-image' src={bottomleft} alt="suitcase"></img> </div>
                                         <div className='numbers-block'>
                                                 <div className='animated-number'>
                                                         <Number n={3000} />
@@ -94,6 +151,7 @@ const Company = () => {
                         </div>
                 </div>
 
+            </div>
             </div>
     )
 }

@@ -1,22 +1,41 @@
 .h2{
     text-align: center;
     font-size: 35px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(70, 70, 70);
+}
+
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0% 5% 40px 5%;
+    border-bottom: 1px solid rgb(196, 193, 193);
+
 }
 
 .cards{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 3% 40px;
-    border-bottom: 1px solid rgb(196, 193, 193);
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1em;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
+@media (max-width: 1240px) {
+    .cards {
+        justify-content: center;
+    }
+
 }
 
+.cards-100vw {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 .cards .logo-image{
     cursor: pointer;
     height: 80%;
@@ -27,6 +46,13 @@
     cursor: pointer;
     height: 80%;
     width: 150px;
+}
+
+@media (max-width: 1240px) {
+    .cards .logo-bodyshop {
+        width: 110px;
+    }
+
 }
 
 .card-title{
@@ -40,29 +66,65 @@
     border-left: 1px solid rgb(196, 193, 193);
     border-right: 1px solid rgb(196, 193, 193);
     border-bottom: 1px solid rgb(196, 193, 193);
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 5px 5px;
     width: 250px;
-    min-width: 180px;
-    height: 190px;
+    height: 200px;
     padding: 20px;
     text-align: center;
-    overflow: hidden;
     background-color: white;
     color: rgb(70, 70, 70);
+}
+
+.cards .image-container{
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 5px 5px 0px 0px;
+    width: 250px;
+    height: 190px;
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+@media (max-width: 1240px) {
+    .cards .image-container {
+        width: 180px;
+        height: 136.8px;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .cards .text-container {
+        width: 180px;
+        height: 180px;
+    }
+
 }
 
 .cards .card-text{
     font-size: 16px;
     font-weight: 400;
 }
-.cards .image-container{
-    border: 1px solid rgb(196, 193, 193);
-    border-radius: 3px 3px 0px 0px;
-    width: 250px;
-    min-width: 180px;
-    height: 190px;
-    padding-top: 30px;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
+
+@media (max-width: 1240px) {
+    .cards .card-text {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .cards .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    .cards .logo-image {
+        width: 110px;
+    }
+
 }

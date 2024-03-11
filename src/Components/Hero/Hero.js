@@ -6,8 +6,9 @@ import {Parallax} from 'react-parallax'
 
 const Hero = () => {
   return (
+
     <div className="hero">
-        <Parallax strength={600} bgImage={hero}>
+        <Parallax strength={300} bgImage={hero} className='hero-bg'>
             <div className="content">
 
               <div className='hero-content'>
@@ -22,6 +23,7 @@ const Hero = () => {
             </div>
         </Parallax>
     </div>
+
   )
 }
 

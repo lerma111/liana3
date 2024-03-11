@@ -1,6 +1,10 @@
 .content {
     height: 40vh;
+    backdrop-filter: brightness(70%);
+
 }
+
+
 .content .hero-content {
     position: absolute;
     top: 50%;
@@ -13,13 +17,14 @@
     font-size: 40px;
 }
 
+
+
 .content .search-button{
 
     position: absolute;
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-family: "Mukta Malar", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -28,7 +33,6 @@
     border-radius: 4px;
     color: white;
     align-items: 'center';
-    justify-content: 'center';
     padding: 4px 13px;
     background-color: #4c8930;
     cursor: pointer;
@@ -51,3 +55,15 @@
     filter: saturate(30%) blur(2px);;
     transition: all 0.4s;
 }*/
+
+@media (max-width: 757px) {
+    .content .hero-content {
+        font-size: 30px;
+    };
+}
+
+@media (max-width: 496px) {
+    .content .hero-content {
+        font-size: 30px;
+    }
+}

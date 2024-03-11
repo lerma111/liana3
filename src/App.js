@@ -6,6 +6,8 @@ import Hero from './Components/Hero/Hero';
 import Card from './Components/Cards/Card.js';
 import Footer from './Components/Footer/Footer.js'
 import Company from './Components/Company/Company.js'
+import News from './Components/Newsfeed/News.js'
+import Newsletter from './Components/Newsletter/Newsletter.js'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Navbar/>
         <Hero/>
         <Company/>
+        <News/>
         <Card/>
+        <Newsletter/>
         <Footer/>
  
     </div>

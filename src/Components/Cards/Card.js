@@ -9,14 +9,17 @@ import ikea from '../../kuvat/References/ikea_logo.png'
 const Card = () => {
     return(
 
-        <div>
+        <>
+        <div className='cards-100vw'>
+
+        <div className='cards-container'>
         
-        <div><h2 className='h2'>References</h2></div>
+        <h2 className='h2'>References</h2>
         
         <div className="cards">
             <div className='card1'>
                 <div className='image-container'>
-                    <img className="logo-image"src={bosch} alt="bosch logo"></img>
+                    <img className="logo-image"src={bosch} alt="bosch logo" a href='https://www.bosch.com/'></img>
                 </div>
                 <div className='text-container'>
                     <h2 className="card-title">Robert Bosch</h2>
@@ -54,6 +57,8 @@ const Card = () => {
             </div></div>
         </div>
         </div>
+        </div>
+        </>
     )
 }
 

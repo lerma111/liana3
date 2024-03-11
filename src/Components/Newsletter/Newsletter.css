@@ -1,0 +1,150 @@
+.newsletter-h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 20px 0;
+        color: rgb(70, 70, 70);
+}
+
+.newsletter-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5% 5% 5%;
+}
+
+.newsletter-text{
+    font-size: 16px;
+    font-weight: 400;
+    width: 30%;
+    text-align: center;
+}
+
+.email-block{
+    height: 2.5em;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    color: red;
+
+}
+
+.newsletter-search-button{
+
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    font-style: normal;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    align-items: 'center';
+    justify-content: 'center';
+    padding: 3px 13px;
+    background-color: #4c8930;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.newsletter-search-button:hover{
+    background-color: #509d2c;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+
+.input{
+    padding-left: 1em;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    font-size: 17px;
+    font-style: normal;
+    border-style: none;
+    border: solid grey 1px;
+    border-radius: 4px;
+    padding-left: 1em;
+}
+
+/* MODAL STYLING */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 17px;
+}
+
+.modal-h2 {
+    color: rgb(70, 70, 70);
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 4px;
+    max-width: 470px;
+    min-width: 470px;
+    min-height: 245px;
+    border: #4c8930 solid 1px;
+}
+
+.close-modal {
+
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    font-family: "Mukta Malar", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: normal;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    padding: 3px 13px;
+    background-color: #4c8930;
+    cursor: pointer;
+}
+
+
+.close-modal:hover{
+    background-color: #509d2c;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+
+.fix-message{
+    height: 2em;
+
+}

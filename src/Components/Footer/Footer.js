@@ -5,6 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
+    <div className='footer-100vw'>
     <div className='footer-container'>
         
         <div className='footer-top'>   
@@ -28,13 +29,14 @@ const Footer = () => {
                 <div className='button-div'><div className='footer-button'><div className='button-text'>Contact us</div></div></div>
                 
                 <div className='footer-socials'>
-                  <img src={facebook} alt="facebook"/>
-                  <img src={twitter} alt="twitter"/>
-                  <img src={linkedin} alt="linkedin"/>
+                  <img src={facebook} className='footer-img' alt="facebook"/>
+                  <img src={twitter} className='footer-img' alt="twitter"/>
+                  <img src={linkedin} className='footer-img' alt="linkedin"/>
                 </div>
               </div>
         </div>
 
+      </div>
       </div>
 
   )

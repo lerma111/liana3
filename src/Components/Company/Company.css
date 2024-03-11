@@ -1,9 +1,61 @@
+.company-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 5% 40px 5%;
+}
+
+.company-100vw {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .company-container .top-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5em;
+  padding-top: 40px;
+}
+
+@media (max-width: 1253px) {
+  .company-container .top-container {
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+.fact-sheet-r {
+    display: none;
+  }
+
+  @media (max-width: 1217px) {
+    .fact-sheet-r {
+      display: block;
+      position: relative;
+      height: 250px;
+      width: 360px;
+      max-width: 360px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1217px) {
+    .company-container .bottom-container {
+      display: none;
+    }
+  }
+
+@media (max-width: 1240px) {
+  .company-container .top-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 40px 5% 0px;
-    gap: 1em;
+  }
 }
 
 /* trash
@@ -41,17 +93,41 @@
 .company-image-container {
     position:relative;
     height: 250px;
-    width: 450px;
-    min-width: 250px;
+    width: 360px;
     border-radius: 5px;
     overflow: hidden;
 }
 
+
+@media (max-width: 1240px) {
+    .company-image-container {
+    }
+  }
+
+
+
+/*
+  @media (max-width: 1237px) {
+    .company-image-container {
+      height: 150px;
+      width: 216px;
+    }
+  }
+*/
+
 .company-image {
     float: left;
     height: 250px;
+    max-width: 360px;
     background-size: cover;
 }
+
+@media (max-width: 1240px) {
+    .company-image {
+
+    }
+  }
+
 
 .company-image-overlay {
     position: absolute;
@@ -62,11 +138,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: saturate(100%) blur(1px);
+    backdrop-filter: blur(1px) brightness(70%);
 }
 
 .company-image-overlay:hover {
-    backdrop-filter: saturate(150%);
+    backdrop-filter: unset;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -101,15 +177,33 @@
 .bottom-container{
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid rgb(196, 193, 193);
     gap: 3em;
-    padding-top: 25px;
+    padding-top: 40px;
     /*background-color: blue;*/
 }
+
+
+
+
 .bottom-content-container{
     display: flex;
-    min-width: 250px;
     /*background-color: red;*/
+}
+
+.fact-sheet-r{
+  position:relative;
+  height: 250px;
+  width: 360px;
+  max-width: 360px;
+  border: 1px solid rgb(196, 193, 193);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/*RESPONSIVE VERSION*/
+.bottom-content-container-r{
+  display: flex;
+  padding: 0 15px 0 15px;
 }
 
 .bottom-content-block{
@@ -117,10 +211,16 @@
     align-items: center;
 }
 
+/*RESPONSIVE VERSION*/
+.bottom-content-block-r{
+  display: flex;
+  align-items: center;
+}
+
 .numbers-block{
-    min-width: 170px;
     height: 200px;
 }
+
 
 .animated-number{
     font-size: 80px;
@@ -129,6 +229,17 @@
     display: flex;
     align-items: flex-end;
     margin-top: 35px;
+    min-width: 167px;
+}
+
+/*RESPONSIVE VERSION*/
+.animated-number-r{
+  display: flex;
+  font-weight: 250;
+  font-size: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .number-text{
@@ -138,8 +249,38 @@
     display: flex;
     margin-top: -30px;
 }
+
+/*RESPONSIVE VERSION*/
+.number-text-r{
+  font-weight: 250;
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+
 .client-image{
     width: 95px;
     padding-right: 30px;
     padding-bottom: 10px;
+}
+
+/*RESPONSIVE VERSION*/
+.client-image-r{
+  width: 55px;
+  padding-right: none;
+  padding-bottom: none;
+}
+
+.fact-sheet-block-r{
+  height: 250px;
+}
+
+
+.content-block-image-container-r{
+  display: flex;
+  align-items: center;
 }
